@@ -1,0 +1,51 @@
+.notes-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #CCFFFF;
+  border-left: 8px solid gray;
+  font-family: Comic Sans MS;
+  outline: none;
+}
+
+.notes-box:focus {
+  border: 6px solid gray;
+  outline: none;
+}
+
+#add {
+  height: 15%;
+  width: 5%;
+  padding: 10px;
+  color: white;
+  margin-top: 15px;
+  border: 1px solid lightgray;
+  border-radius: 10%;
+  float: right;
+  outline: none;
+  background-color: #283747;
+  position: relative;
+  cursor: pointer;
+  letter-spacing: .15em;
+}
+
+textarea {
+  padding: 10px;
+  outline: none;
+  background-color: #CCFFFF;
+  border-radius: 10%;
+  height: 100%;
+  max-width: 100%;
+  border: 6px solid lightgray;
+  border-left: 8px solid gray;
+  font-family: Comic Sans MS;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#add:hover {
+  color: rgba(255, 255, 255, 0.85);
+}

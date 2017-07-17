@@ -9,6 +9,11 @@
   border-left: 8px solid gray;
   font-family: Comic Sans MS;
   outline: none;
+  margin-top: 5px;
+}
+
+.bg-color {
+  background-color: #283747;
 }
 
 .notes-box:focus {
@@ -16,22 +21,26 @@
   outline: none;
 }
 
-#add {
+/* #add {
   height: 15%;
-  width: 5%;
+  width: 100%;
+  margin: 0 auto;
   padding: 10px;
   color: white;
-  margin-top: 15px;
   border: 1px solid lightgray;
   border-radius: 10%;
   float: right;
   outline: none;
   background-color: #283747;
-  position: relative;
+  position: absolute;
   cursor: pointer;
   letter-spacing: .15em;
 }
 
+#add:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+ */
 textarea {
   padding: 10px;
   outline: none;
@@ -46,6 +55,11 @@ textarea {
   display: block;
 }
 
-#add:hover {
-  color: rgba(255, 255, 255, 0.85);
+.btn-floating {
+  margin-top: 5px;
+  float: right;
+}
+
+.btn-floating:hover {
+  transform: scale(1.05);
 }

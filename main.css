@@ -58,8 +58,10 @@ textarea {
 .btn-floating {
   margin-top: 5px;
   float: right;
+  opacity: 0.5;
 }
 
 .btn-floating:hover {
+  opacity: 1.0;
   transform: scale(1.05);
 }

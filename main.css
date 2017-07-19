@@ -72,7 +72,7 @@ textarea {
   color: #34495E;
   overflow: hidden;
   border-right: .15em solid black;
-  whitespace: wrap;
+  whitespace: nowrap;
   margin: 0 auto;
   letter-spacing: .15em;
   animation:

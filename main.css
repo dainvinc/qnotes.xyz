@@ -12,8 +12,8 @@
   margin-top: 5px;
 }
 
-.bg-color {
-  background-color: #283747;
+div.bg-color {
+  background-color: #34495E;
 }
 
 .notes-box:focus {
@@ -69,9 +69,8 @@ textarea {
 /* css-tricks.com */
 
 .main-title{
-  color: #34495E;
+  color: #AEB6BF;
   overflow: hidden;
-  border-right: .15em solid black;
   whitespace: nowrap;
   margin: 0 auto;
   letter-spacing: .15em;
@@ -87,5 +86,4 @@ textarea {
 
 @keyframes blink-caret {
   from, to {border-color: transparent}
-  50% {border-color: black;}
 }

@@ -93,3 +93,14 @@ textarea {
 @keyframes blink-caret {
   from, to {border-color: transparent}
 }
+/* css-tricks.com */
+
+footer {
+  background-color: rgba(174,182,191, 0.2);
+}
+
+footer p {
+  text-align: center;
+  font-family: Comic-sans;
+  letter-spacing: 0.25em;
+}

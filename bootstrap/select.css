@@ -1,0 +1,31 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("comp.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: raleway;
+    color: white;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 7em;
+}
+
+#content {
+    color: aliceblue;
+    padding-top: 25%; 
+    text-align: center; 
+}
+
+.navbar-brand {
+    font-family: bellefair;
+    text-transform: uppercase;
+}
+
+hr {
+    width: 375px;
+}

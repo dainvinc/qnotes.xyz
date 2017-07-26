@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  var anchor = document.querySelector('button.btn');
+  var textbox = document.querySelector('.notes-box');
+  anchor.onclick = function () {
+      var blob = new Blob([`${textbox.value}`], {type: "text/plain;charset=utf-8"});
+      saveAs(blob, "a.txt");
+  };
+    
   $('.btn-floating').click(function() {
     $(this).before($('<textarea></textarea>')).appendTo('div.container');
     $('textarea').addClass('notes-box');

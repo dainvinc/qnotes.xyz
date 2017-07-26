@@ -55,6 +55,11 @@ textarea {
   display: block;
 }
 
+.glyphicon {
+  font-size: 30px;
+  margin: 12.25px -10px;
+}
+
 .btn-floating {
   margin-top: 5px;
   margin-bottom: 10px;

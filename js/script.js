@@ -2,12 +2,15 @@ $(document).ready(function() {
   $(".glyphicon").click( function() {
     var text = $(".notes-box").trim().val();
     //var filename = $("#input-fileName").val()
-    if(text.trim() === "") 
-    var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
-    saveAs(blob, "qnotes.txt");
+    if(text.trim() === "") {
+      alert("Please, write something to download.");
+    } else {
+      var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
+      saveAs(blob, "qnotes.txt");
+    }
   });
   
-  $('.btn-floating').click(function() {
+  $('#add').click(function() {
     $(this).before($('<textarea></textarea>')).appendTo('div.container');
     $('textarea').addClass('notes-box');
     $('textarea').attr('Placeholder', 'Start typing here...');

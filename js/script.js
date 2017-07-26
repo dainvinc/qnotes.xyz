@@ -1,7 +1,8 @@
 $(document).ready(function() {
   $(".glyphicon").click( function() {
-    var text = $(".notes-box").val();
+    var text = $(".notes-box").trim().val();
     //var filename = $("#input-fileName").val()
+    if(text.trim() === "") 
     var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
     saveAs(blob, "qnotes.txt");
   });

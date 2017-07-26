@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $(".glyphicon").click( function() {
-    var text = $(".notes-box").trim().val();
+    var text = $(".notes-box").val();
     //var filename = $("#input-fileName").val()
     if(text.trim() === "") {
       alert("Please, write something to download.");

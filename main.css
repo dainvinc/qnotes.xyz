@@ -55,7 +55,7 @@ textarea {
   display: block;
 }
 
-span.glyphicon {
+.glyphicon {
   font-size: 30px;
   margin: 12.25px -10px;
 }

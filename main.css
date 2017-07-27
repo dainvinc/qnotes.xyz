@@ -107,11 +107,16 @@ hr {
 /* css-tricks.com */
 
 footer {
+  position: fixed;
   background-color: rgba(174,182,191, 0.2);
+  width: 100%;
+  bottom: 0;
 }
 
 footer p {
-  text-align: center;
+  width: 50%;
+  margin: 40px auto;
   font-family: 'Ubuntu', sans-serif;
   letter-spacing: 0.15em;
+  text-align: center;
 }

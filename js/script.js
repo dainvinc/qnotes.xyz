@@ -1,4 +1,10 @@
 $(document).ready(function() {
+  $('#add').click(function() {
+    $('<textarea></textarea>').appendTo('#main-notes');
+    $('textarea').addClass('notes-box');
+    $('textarea').attr('Placeholder', 'Start typing here...');
+  });
+  
   $(".glyphicon").click( function() {
     var text = $(".notes-box").val();
     //var filename = $("#input-fileName").val()
@@ -8,11 +14,5 @@ $(document).ready(function() {
       var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
       saveAs(blob, "qnotes.txt");
     }
-  });
-  
-  $('#add').click(function() {
-    $('<textarea></textarea>').appendTo('#main-notes');
-    $('textarea').addClass('notes-box');
-    $('textarea').attr('Placeholder', 'Start typing here...');
   });
 });

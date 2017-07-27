@@ -79,12 +79,13 @@ hr {
   color: #AEB6BF;
   font-size: 150%;
   letter-spacing: 0.1;
-  font-family: cursive;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* css-tricks.com */
 
 .main-title{
+  font-family: 'Lemonada', cursive;
   color: #AEB6BF;
   overflow: hidden;
   whitespace: nowrap;

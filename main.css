@@ -88,7 +88,7 @@ hr {
   font-family: 'Lemonada', cursive;
   color: #AEB6BF;
   overflow: hidden;
-  whitespace: nowrap;
+  white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em;
   animation:

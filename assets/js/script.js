@@ -1,11 +1,18 @@
-$(document).ready(function() {
-  $('#add').click(function() {
-    $('<textarea></textarea>').appendTo('#main-notes');
-    $('textarea').addClass('notes-box');
-    $('textarea').attr('Placeholder', 'Start typing here...');
+$('.container').on("click", "#add", function(event) {
+	var newNotes = $("ul").append("<li>" +"<span>"  +"</span>" +"<textarea>" + "</textarea>" +"</li>");
+  $("textarea").addClass("notes-box").attr("placeholder", "Start typing here...");
+  $("span").addClass("fa fa-trash-o");
+  event.stopPropagation();
+});
+
+$("ul").on("click", "span", function(event) {
+	$(this).parent().fadeOut(function() {
+  	$(this).remove();
   });
-  
-  $(".glyphicon").click( function() {
+  event.stopPropagation();
+});
+
+$(".glyphicon").click( function() {
     var text = $(".notes-box").val();
     //var filename = $("#input-fileName").val()
     if(text.trim() === "") {
@@ -14,5 +21,4 @@ $(document).ready(function() {
       var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
       saveAs(blob, "qnotes.txt");
     }
-  });
 });
